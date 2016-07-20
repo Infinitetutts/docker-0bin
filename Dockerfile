@@ -6,5 +6,6 @@ ENV PORT 8000
 
 RUN apk add --no-cache python3 && rm -rf /var/cache/apk/*
 RUN pip3 install zerobin
+ADD entrypoint.sh /
 
-ENTRYPOINT ["zerobin", "--host=$HOST", "--port=$PORT", "--compressed-static=True"]
+ENTRYPOINT ["./entrypoint.sh"]
