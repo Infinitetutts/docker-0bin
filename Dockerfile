@@ -1,5 +1,5 @@
 FROM alpine:latest
-MAINTAINER Stephane Albert "sheeprine@nullplace.com"
+MAINTAINER Sri Krishna Bhagavan
 
 ENV HOST 0.0.0.0
 ENV PORT 8000
